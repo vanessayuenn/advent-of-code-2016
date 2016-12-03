@@ -45,7 +45,8 @@ const stepByStep = (x, y, dir, steps) => {
   return [x, y];
 }
 
-/* part 1 */
+console.log('--------------- PART 1 ---------------');
+
 let currDirId = 0;      // start with facing north
 let [x, y] = [0, 0];
 
@@ -55,12 +56,12 @@ input.forEach((el, i) => {
   // console.log(x,y);
 });
 
-console.log('--------------- PART 1 ---------------');
 console.log(`final position: ${[x, y]}`);
 console.log(`i.e. ${Math.abs(x) + Math.abs(y)} blocks away! 🎉`);
 
 
-/* part 2 */
+console.log('--------------- PART 2 ---------------');
+
 currDirId = 0;
 [x, y] = [0, 0];
 let visited = new Map();
@@ -77,6 +78,5 @@ input.find((el, i) => {
   }
 });
 
-console.log('--------------- PART 2 ---------------');
 console.log(`first position visited twice: ${[x, y]}`);
 console.log(`i.e. ${Math.abs(x) + Math.abs(y)} blocks away! 🎉`);

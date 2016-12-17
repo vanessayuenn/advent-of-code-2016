@@ -40,22 +40,10 @@ const move = (x, y, str) => {
 move(0, 0, input);
 
 console.log('--------------- PART 1 ---------------');
-const shortest = path.reduce((a, b) => {
-  if (a.length < b.length) {
-    return a;
-  } else {
-    return b;
-  }
-});
+const shortest = path.reduce((a, b) => a.length < b.length ? a : b);
 console.log(`Shortest path is ${shortest}.`);
 
 console.log('--------------- PART 2 ---------------');
-const longest = path.reduce((a, b) => {
-  if (a.length > b.length) {
-    return a;
-  } else {
-    return b;
-  }
-});
+const longest = path.reduce((a, b) => a.length > b.length ? a : b);
 console.log(`Longest path is ${longest}.`);
 console.log(`It contains ${longest.length} steps.`);

@@ -1,5 +1,5 @@
 const md5 = require('./md5.min.js');
-const input = require('./day17-input.js');
+const input = `ioramepc`;
 
 let path = [];
 const isOpen = (ch) => ['b','c','d','e','f'].includes(ch);
